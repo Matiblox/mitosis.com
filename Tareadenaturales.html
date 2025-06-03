@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Conceptual de la Mitosis</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 40px;
+    }
+
+    .mapa {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .caja {
+      background-color: #ffffff;
+      border: 2px solid #4a90e2;
+      border-radius: 10px;
+      padding: 15px 25px;
+      width: 300px;
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .linea::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 40px;
+      background-color: #4a90e2;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    .caja:last-child::after {
+      display: none;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Mapa Conceptual de la Mitosis</h2>
+  <div class="mapa">
+    <div class="caja linea">
+      <strong>Interfase</strong><br>
+      La célula crece y duplica su ADN.
+    </div>
+    <div class="caja linea">
+      <strong>Profase</strong><br>
+      Los cromosomas se hacen visibles. Se rompe la membrana nuclear.
+    </div>
+    <div class="caja linea">
+      <strong>Metafase</strong><br>
+      Los cromosomas se alinean en el centro de la célula.
+    </div>
+    <div class="caja linea">
+      <strong>Anafase</strong><br>
+      Los cromosomas se separan y se dirigen a los polos.
+    </div>
+    <div class="caja linea">
+      <strong>Telofase</strong><br>
+      Se forman dos núcleos nuevos y desaparece el huso mitótico.
+    </div>
+    <div class="caja">
+      <strong>Citocinesis</strong><br>
+      El citoplasma se divide y se forman dos células hijas.
+    </div>
+  </div>
+</body>
+</html>
